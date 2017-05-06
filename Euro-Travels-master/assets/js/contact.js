@@ -13,8 +13,15 @@ $(document).ready(function () {
         }, 1000)
         
     })
-    
-    
+     $("#search").click(function(e){
+         $("#search-result").show();
+          initMap();
+        $('html, body').stop().animate({
+            scrollTop: ($("#search-result").offset().top)
+        }, 1250, 'easeInOutExpo');
+        e.preventDefault();
+        
+    })
 });
 
 

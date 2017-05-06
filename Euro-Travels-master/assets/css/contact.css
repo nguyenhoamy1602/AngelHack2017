@@ -14,12 +14,12 @@
 	margin-bottom: 15px;
 }
 .contacts{
-	background: #f9f9f9;
+	background: #fff;
 	text-align: center;
 }
 .contact{
-	padding: 70px 0;
-	background: #fff;
+	
+	background:#f9f9f9; 
 	transition: all .4s ease-in-out;
 }
 .contact:hover{
@@ -41,4 +41,36 @@
 	color: #969595;
 	line-height: 180%;
 	font-size: 13px;
+}
+.col-centre{
+	float: none;
+   margin-right: auto;
+   margin-left: auto;
+}
+.column-wrapper{
+    padding-bottom: 30px;
+}
+.dark-blue{
+	background: #337ab7 !important;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+.hidden-el{
+	display: none;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

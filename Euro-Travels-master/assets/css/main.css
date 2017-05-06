@@ -485,3 +485,11 @@ footer a:hover, footer a:focus{
 	
 	padding-top: 50px;
 }
+.col-centre{
+	float: none;
+   margin-right: auto;
+   margin-left: auto;
+}
+.hidden-el{
+	display: none;
+}

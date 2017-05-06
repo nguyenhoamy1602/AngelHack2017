@@ -16,6 +16,9 @@ $('a[href*=#]:not([href=#])').click(function() {
 
 
 $(document).ready(function(){
+    $('.about').click(function(e) {
+    $('.home').removeClass('active');
+});
     //googleMap
     $("#index-signup").click(function(e){
         setTimeout(function(){

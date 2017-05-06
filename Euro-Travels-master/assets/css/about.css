@@ -34,13 +34,13 @@
 	margin-top: 22px;
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
-	padding: 14px 0;
+
 }
 tbody tr{
 	border: 1px solid #ddd;
 }
 tbody tr td{
-	text-align: center;
+
 }
 tbody tr td:nth-child(1){
 	width: 15%;

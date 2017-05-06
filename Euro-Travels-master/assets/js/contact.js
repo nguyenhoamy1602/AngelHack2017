@@ -3,40 +3,17 @@
  ------------------------------------------*/
 
 $(document).ready(function () {
-
-    $("#contactForm").submit(function(e){
-
-        e.preventDefault();
-        var $ = jQuery;
-
-        var postData 		= $(this).serializeArray(),
-            formURL 		= $(this).attr("action"),
-            $cfResponse 	= $('#contactFormResponse'),
-            $cfsubmit 		= $("#cfsubmit"),
-            cfsubmitText 	= $cfsubmit.text();
-
-        $cfsubmit.text("Sending...");
-
-
-        $.ajax(
-            {
-                url : formURL,
-                type: "POST",
-                data : postData,
-                success:function(data)
-                {
-                    $cfResponse.html(data);
-                    $cfsubmit.text(cfsubmitText);
-                },
-                error: function(data)
-                {
-                    alert("Error occurd! Please try again");
-                }
-            });
-
-        return false;
-
+    $( '.sr-button' ).click(function() {
+        $( "#hidden" ).show( 1000 );
     });
+    $("#signup").click(function(e){
+         $("#signup").button('loading');
+        setTimeout(function(){
+            window.location.href = "chef.html";
+        }, 1000)
+        
+    })
+    
 });
 
 

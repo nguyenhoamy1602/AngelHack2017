@@ -88,10 +88,12 @@ $(document).ready(function () {
         e.preventDefault();
         
     })
+
     $(".send-message").click(
         function(e){
             $(".badge").show();
     })
+
 
    
 });

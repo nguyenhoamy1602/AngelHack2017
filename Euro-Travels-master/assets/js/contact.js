@@ -89,6 +89,12 @@ $(document).ready(function () {
         
     })
 
+    $(".send-message").click(
+        function(e){
+            $(".badge").show();
+    })
+
+
    
 });
 

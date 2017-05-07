@@ -1,7 +1,7 @@
 ///////////////////////////////
 // One page Smooth Scrolling
 ///////////////////////////////
-$('a[href*=#]:not([href=#])').click(function() {
+$('a[href*=#]:not([href=#])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -15,30 +15,29 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 
 
-$(document).ready(function(){
+$(document).ready(function () {
     //googleMap
-    $("#index-signup").click(function(e){
-        setTimeout(function(){
+    $("#index-signup").click(function (e) {
+        setTimeout(function () {
             window.location.href = "contact.html";
         }, 1000)
-        
+
     })
-    
+
 });
 
 //flexslider
- $(window).load(function() {
+$(window).load(function () {
     $('.flexslider').flexslider({
         controlNav: false
     });
-  });
+});
 
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     //$(".owl-carousel").owlCarousel();
-
     // static navigationbar
     var changeStyle = $('.navigation');
 
@@ -58,15 +57,15 @@ $(document).ready(function() {
         navText: false,
         dots: false,
         loop: true,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:2
+            600: {
+                items: 2
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     });
@@ -77,7 +76,7 @@ $(document).ready(function() {
         dots: false,
         loop: true
     });
-     $('.services-owl-carousel').owlCarousel({
+    $('.services-owl-carousel').owlCarousel({
         items: 1,
         nav: true,
         navText: false,
@@ -85,19 +84,19 @@ $(document).ready(function() {
         loop: true
     });
     $('.sponsor-carousel').owlCarousel({
-        loop:false,
-        margin:10,
-        nav:false,
-        navText:false,
-        responsive:{
-            0:{
-                items:2
+        loop: false,
+        margin: 10,
+        nav: false,
+        navText: false,
+        responsive: {
+            0: {
+                items: 2
             },
-            600:{
-                items:4
+            600: {
+                items: 4
             },
-            1000:{
-                items:6
+            1000: {
+                items: 6
             }
         }
     });

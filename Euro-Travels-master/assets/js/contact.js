@@ -82,7 +82,7 @@ $(document).ready(function () {
     $("#signup").click(function (e) {
         $("#signup").button('loading');
         setTimeout(function () {
-            window.location.href = "chef.html";
+            window.location.href = "uprofile.html";
         }, 1000)
 
     })
